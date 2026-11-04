@@ -12,7 +12,7 @@ or open this repo in Claude Code and type `/setup`.
 
 If you are reading this on the template itself, start here. Only the admin (the person
 who adds the scorecards) needs any of this; teammates just open a link and enter the
-team code. You'll need:
+team code. Setup goes quickest if these accounts exist before you begin:
 
 - a **GitHub** account (free): https://github.com/signup
 - a **Cloudflare** account (free): https://dash.cloudflare.com/sign-up
