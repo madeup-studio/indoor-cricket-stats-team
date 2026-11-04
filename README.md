@@ -10,7 +10,17 @@ or open this repo in Claude Code and type `/setup`.
 
 ## Not made your copy yet?
 
-If you are reading this on the template itself, make your team's private copy first.
+If you are reading this on the template itself, start here. Only the admin (the person
+who adds the scorecards) needs any of this; teammates just open a link and enter the
+team code. You'll need:
+
+- a **GitHub** account (free): https://github.com/signup
+- a **Cloudflare** account (free): https://dash.cloudflare.com/sign-up
+- a **Claude Pro or Max** plan: https://claude.ai/upgrade, and the Claude app on your phone
+- about 20 minutes; the full guide is
+  [docs/SETUP.md](https://github.com/madeup-studio/indoor-cricket-stats/blob/main/docs/SETUP.md)
+
+Then make your team's private copy.
 Either open this link in a web browser (the GitHub app hides the button) and fill in
 the form: https://github.com/new?template_owner=madeup-studio&template_name=indoor-cricket-stats-team
 
