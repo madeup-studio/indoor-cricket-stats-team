@@ -1,0 +1,104 @@
+/* MaDe-uP Studios — design tokens. Binding for every product app. */
+
+:root {
+  /* Colors */
+  --madeup-color-surface: #f1f5f9;
+  --madeup-color-surface-elevated: #ffffff;
+  --madeup-color-ink: #0f172a;
+  --madeup-color-ink-muted: #64748b;
+  --madeup-color-border: #e2e8f0;
+  --madeup-color-accent: #4f46e5;
+  --madeup-color-danger: #dc2626;
+  --madeup-color-success: #16a34a;
+  --madeup-color-warning: #ca8a04;
+  --madeup-color-input-required-bg: #fef2f2;
+
+  /* Typography */
+  --madeup-font-family-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* Serif display stack for immersive documents (letterhead titles etc.).
+     System fonts only — no web-font load, no CSP concern. */
+  --madeup-font-family-serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --madeup-font-caption: 0.75rem;
+  --madeup-font-body: 0.875rem;
+  --madeup-font-body-lg: 1rem;
+  --madeup-font-h3: 1rem;
+  --madeup-font-h2: 1.25rem;
+  --madeup-font-h1: 1.75rem;
+
+  /* Documents — immersive "paper" surfaces for authored docs (Charter, CV).
+     Deliberately theme-agnostic: a document reads as a light printed sheet in
+     both light and dark app themes, so these are NOT overridden in dark theme.
+     Consumers remap the semantic tokens to these inside a `.doc-paper` scope. */
+  --madeup-color-surface-paper: #fbfaf7;
+  --madeup-color-ink-paper: #1a1a17;
+  --madeup-color-ink-paper-muted: #6b6a63;
+  --madeup-color-border-paper: #e4e1d8;
+  --madeup-color-accent-paper: #4f46e5;
+  --madeup-color-warning-paper: #b45309;
+  --madeup-color-success-paper: #15803d;
+
+  /* Spacing — 4px base, 8 steps */
+  --madeup-space-1: 4px;
+  --madeup-space-2: 8px;
+  --madeup-space-3: 12px;
+  --madeup-space-4: 16px;
+  --madeup-space-5: 24px;
+  --madeup-space-6: 32px;
+  --madeup-space-7: 48px;
+  --madeup-space-8: 64px;
+
+  /* Radius */
+  --madeup-radius-sm: 4px;
+  --madeup-radius-md: 8px;
+  --madeup-radius-lg: 12px;
+  --madeup-radius-hero: 16px;
+
+  /* Shadow */
+  --madeup-shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.06);
+  --madeup-shadow-card-hover: 0 4px 8px rgba(15, 23, 42, 0.06), 0 2px 4px rgba(15, 23, 42, 0.08);
+  --madeup-shadow-modal: 0 16px 32px rgba(15, 23, 42, 0.16);
+}
+
+/*
+ * Dark theme — applied when [data-theme="dark"] is set on <html> or any ancestor.
+ * Color tokens are overridden; typography, spacing, radii are theme-agnostic.
+ */
+[data-theme="dark"] {
+  --madeup-color-surface: #0f172a;
+  --madeup-color-surface-elevated: #1e293b;
+  --madeup-color-ink: #f1f5f9;
+  --madeup-color-ink-muted: #94a3b8;
+  --madeup-color-border: #334155;
+  --madeup-color-accent: #818cf8;
+  --madeup-color-danger: #f87171;
+  --madeup-color-success: #4ade80;
+  --madeup-color-warning: #facc15;
+  --madeup-color-input-required-bg: #3f1d1d;
+
+  --madeup-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.40), 0 1px 3px rgba(0, 0, 0, 0.50);
+  --madeup-shadow-card-hover: 0 4px 8px rgba(0, 0, 0, 0.50), 0 2px 4px rgba(0, 0, 0, 0.60);
+  --madeup-shadow-modal: 0 16px 32px rgba(0, 0, 0, 0.60);
+}
+
+/*
+ * indoor-cricket-stats addition: follow the phone's dark mode automatically.
+ * Same values as [data-theme="dark"] above; an explicit data-theme="light" opts out.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --madeup-color-surface: #0f172a;
+    --madeup-color-surface-elevated: #1e293b;
+    --madeup-color-ink: #f1f5f9;
+    --madeup-color-ink-muted: #94a3b8;
+    --madeup-color-border: #334155;
+    --madeup-color-accent: #818cf8;
+    --madeup-color-danger: #f87171;
+    --madeup-color-success: #4ade80;
+    --madeup-color-warning: #facc15;
+    --madeup-color-input-required-bg: #3f1d1d;
+
+    --madeup-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.40), 0 1px 3px rgba(0, 0, 0, 0.50);
+    --madeup-shadow-card-hover: 0 4px 8px rgba(0, 0, 0, 0.50), 0 2px 4px rgba(0, 0, 0, 0.60);
+    --madeup-shadow-modal: 0 16px 32px rgba(0, 0, 0, 0.60);
+  }
+}

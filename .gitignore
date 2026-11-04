@@ -1,0 +1,17 @@
+# Python / tooling
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.playwright-mcp/
+
+# Local only
+dist/
+.cf-token
+Teams/*/.build/
+
+# Photos waiting in inbox/ are moved into their season once processed
+inbox/*
+!inbox/README.txt
+
+# NOTE: site/ (the built app) and engine/ (the vendored engine) ARE committed.

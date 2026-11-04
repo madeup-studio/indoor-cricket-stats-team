@@ -1,0 +1,37 @@
+/* The coach's letter: an authored document, so it reads as a light paper sheet in
+   both themes (the studio's "paper" tokens) with a serif body. */
+.letter {
+  --madeup-color-ink: var(--madeup-color-ink-paper);
+  --madeup-color-ink-muted: var(--madeup-color-ink-paper-muted);
+  --madeup-color-border: var(--madeup-color-border-paper);
+  margin: 0 0 var(--madeup-space-4);
+  padding: var(--madeup-space-5) var(--madeup-space-4) var(--madeup-space-4);
+  background: var(--madeup-color-surface-paper); color: var(--madeup-color-ink-paper);
+  border-radius: var(--madeup-radius-md); box-shadow: var(--madeup-shadow-card);
+  font-family: var(--madeup-font-family-serif); font-size: 18px; line-height: 1.6;
+  color-scheme: light;
+}
+.letter a { color: var(--madeup-color-accent-paper); }
+.letter-sec + .letter-sec { margin-top: var(--madeup-space-5); }
+.letter h3 {
+  margin: 0 0 var(--madeup-space-2);
+  font-family: var(--madeup-font-family-sans); font-size: 15px; font-weight: 600;
+  font-variant-caps: all-small-caps; letter-spacing: .07em; color: var(--madeup-color-ink-paper-muted);
+}
+.letter p { margin: 0 0 var(--madeup-space-3); max-width: 62ch; }
+.letter b, .letter strong { font-weight: 600; }
+.letter .notes { list-style: none; margin: 0; padding: 0; }
+.letter .notes li {
+  padding: var(--madeup-space-3) 0; border-top: 1px solid var(--madeup-color-border-paper);
+}
+.letter .notes li:first-child { border-top: 0; padding-top: 0; }
+.letter .notes strong { display: block; font-family: var(--madeup-font-family-sans); font-size: 17px; }
+.letter .notes strong a { text-decoration: none; }
+.letter-disc {
+  margin: var(--madeup-space-5) 0 0; padding-top: var(--madeup-space-3);
+  border-top: 1px solid var(--madeup-color-border-paper);
+  font-family: var(--madeup-font-family-sans); font-size: 14px; line-height: 1.4;
+  color: var(--madeup-color-ink-paper-muted);
+}
+.letter-head { align-items: flex-end; }
+.letter-head a.plain { color: inherit; text-decoration: none; }
