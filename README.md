@@ -14,8 +14,9 @@ If you are reading this on the template itself, make your team's private copy fi
 Either open this link in a web browser (the GitHub app hides the button) and fill in
 the form: https://github.com/new?template_owner=madeup-studio&template_name=indoor-cricket-stats-team
 
-Or, on a computer with Claude Code, paste this into Claude exactly as it is; it
-will ask you what to call the repo:
+Or let Claude do it. This needs **Claude Code** on a computer (the desktop app's
+**Code** tab, or `claude` in a terminal), because it runs commands; normal chat at
+claude.ai cannot. Paste this in exactly as it is; it will ask you what to call the repo:
 
 ```text
 I want my own private copy of the indoor-cricket stats app, made from the template
