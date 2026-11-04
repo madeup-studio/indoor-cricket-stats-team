@@ -26,8 +26,11 @@ https://github.com/madeup-studio/indoor-cricket-stats-team
 2. Create a private repository called YOUR-TEAM-STATS under my account from that
    template, and clone it:
    gh repo create YOUR-TEAM-STATS --private --template madeup-studio/indoor-cricket-stats-team --clone
-3. Tell me the folder it was cloned into. I will open Claude Code in that folder and
-   type /setup. Do not run the setup wizard from here.
+3. Do not run the setup wizard from here. Instead, finish with short next steps for
+   me: the folder it was cloned into; open that folder in Claude Code (desktop app →
+   Code → open the folder, or `cd` into it and run `claude`); type /setup and follow
+   the wizard, about 20 minutes; or connect the Claude phone app to the new repo and
+   run /setup there instead.
 
 Setup guide, for reference:
 https://github.com/madeup-studio/indoor-cricket-stats/blob/main/docs/SETUP.md
