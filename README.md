@@ -8,6 +8,31 @@ This repo is your team's private copy. First time? Follow
 [the setup guide](https://github.com/madeup-studio/indoor-cricket-stats/blob/main/docs/SETUP.md),
 or open this repo in Claude Code and type `/setup`.
 
+## Not made your copy yet?
+
+If you are reading this on the template itself, make your team's private copy first.
+Either open this link in a web browser (the GitHub app hides the button) and fill in
+the form: https://github.com/new?template_owner=madeup-studio&template_name=indoor-cricket-stats-team
+
+Or, on a computer with Claude Code, paste this into Claude and replace
+`YOUR-TEAM-STATS` with the name you want:
+
+```text
+I want my own private copy of the indoor-cricket stats app, made from the template
+https://github.com/madeup-studio/indoor-cricket-stats-team
+
+1. Check the GitHub CLI is installed and signed in (`gh auth status`). If not, help me
+   install it and run `gh auth login`, telling me exactly what to click.
+2. Create a private repository called YOUR-TEAM-STATS under my account from that
+   template, and clone it:
+   gh repo create YOUR-TEAM-STATS --private --template madeup-studio/indoor-cricket-stats-team --clone
+3. Tell me the folder it was cloned into. I will open Claude Code in that folder and
+   type /setup. Do not run the setup wizard from here.
+
+Setup guide, for reference:
+https://github.com/madeup-studio/indoor-cricket-stats/blob/main/docs/SETUP.md
+```
+
 ## After every game (from your phone)
 
 1. Take a photo of the scorecard at the arena (or save the one from WhatsApp).
